@@ -1,0 +1,788 @@
+=====================
+Opened log file
+=====================
+Created pcores directory
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+Copied C:/Xilinx/14.1/ISE_DS/EDK/data/xflow/bitgen_spartan6.ut to etc directory
+Copied file C:/Xilinx/14.1/ISE_DS/EDK/data/xflow/fast_runtime_spartan6.opt to
+etc directory
+
+Overriding IP level properties ...
+
+Computing clock values...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+Checking platform address map ...
+Created backup of etc/bitgen.ut to etc/bitgen.ut.virtex5
+Copied C:/Xilinx/14.1/ISE_DS/EDK/data/xflow/bitgen_spartan6.ut to etc directory
+Created backup of etc/fast_runtime.opt to etc/fast_runtime.opt.virtex5
+Copied file C:/Xilinx/14.1/ISE_DS/EDK/data/xflow/fast_runtime_spartan6.opt to
+etc directory
+No changes to be saved in MHS file
+Saved project XMP file
+Saved Make file
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Writing filter settings....
+Done writing filter settings to:
+	C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\etc\microblaze.filters
+Done writing Tab View settings to:
+	C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\etc\microblaze.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Writing filter settings....
+Done writing filter settings to:
+	C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\etc\microblaze.filters
+Done writing Tab View settings to:
+	C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\etc\microblaze.gui
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tcl is overriding
+   PARAMETER C_FAMILY value to spartan6 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 79 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x81000000-0x8100ffff) Ethernet_Lite	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE: Ethernet_Lite - This design
+   requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation. - C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\microblaze.mhs
+   line 107
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x2000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 92 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 93 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tcl is overriding
+   PARAMETER C_FAMILY value to spartan6 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 79 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x81000000-0x8100ffff) Ethernet_Lite	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE: Ethernet_Lite - This design
+   requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation. - C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\microblaze.mhs
+   line 107
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x2000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 92 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 93 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tcl is overriding
+   PARAMETER C_FAMILY value to spartan6 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 79 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x81000000-0x8100ffff) Ethernet_Lite	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE: Ethernet_Lite - This design
+   requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation. - C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\microblaze.mhs
+   line 107
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x2000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 92 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 93 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Wed Jan 24 17:54:28 2024
+ make -f microblaze.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp microblaze.xmp -exit_on_error -dont_add_loginfo -edwver 1.2 -xml SDK\SDK_Export\hw/microblaze.xml 
+Release 14.1 - psf2Edward EDK_P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 3 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+WARNING:EDK:4180 - PORT: bscan_tdo1, CONNECTOR: bscan_tdo1 - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 239 
+WARNING:EDK:4181 - PORT: bscan_tdi, CONNECTOR: bscan_tdi - floating connection -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 232 
+WARNING:EDK:4181 - PORT: bscan_reset, CONNECTOR: bscan_reset - floating
+   connection -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 233 
+WARNING:EDK:4181 - PORT: bscan_shift, CONNECTOR: bscan_shift - floating
+   connection -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 234 
+WARNING:EDK:4181 - PORT: bscan_update, CONNECTOR: bscan_update - floating
+   connection -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 235 
+WARNING:EDK:4181 - PORT: bscan_capture, CONNECTOR: bscan_capture - floating
+   connection -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 236 
+WARNING:EDK:4181 - PORT: bscan_sel1, CONNECTOR: bscan_sel1 - floating connection
+   -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 237 
+WARNING:EDK:4181 - PORT: bscan_drck1, CONNECTOR: bscan_drck1 - floating
+   connection -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 238 
+WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
+   floating connection -
+   C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\microblaze.mhs line 182 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Port present in Ethernet_Lite
+Conversion to XML complete.
+xdsgen -inp microblaze.xmp -report SDK\SDK_Export\hw/microblaze.html  -make_docs_local
+Release 14.1 - xdsgen EDK_P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Generated Block Diagram.
+Rasterizing microblaze_0.jpg.....
+Rasterizing mb_plb.jpg.....
+Rasterizing ilmb.jpg.....
+Rasterizing dlmb.jpg.....
+Rasterizing dlmb_cntlr.jpg.....
+Rasterizing ilmb_cntlr.jpg.....
+Rasterizing lmb_bram.jpg.....
+Rasterizing Ethernet_Lite.jpg.....
+Rasterizing mem_bus_mux_0.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing mdm_0.jpg.....
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing xps_intc_0.jpg.....
+Rasterizing microblaze_blkd.jpg.....
+Report generated.
+Report generation completed.
+Done!
+
+********************************************************************************
+At Local date and time: Wed Jan 24 17:54:36 2024
+ xsdk.exe -hwspec C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\SDK\SDK_Export\hw\microblaze.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\etc\microblaze.filters
+Done writing Tab View settings to:
+	C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\etc\microblaze.gui
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tcl is overriding
+   PARAMETER C_FAMILY value to spartan6 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 79 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x81000000-0x8100ffff) Ethernet_Lite	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE: Ethernet_Lite - This design
+   requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation. - C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\microblaze.mhs
+   line 107
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x2000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 92 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 93 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tcl is overriding
+   PARAMETER C_FAMILY value to spartan6 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 79 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x81000000-0x8100ffff) Ethernet_Lite	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE: Ethernet_Lite - This design
+   requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation. - C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\microblaze.mhs
+   line 107
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x2000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 92 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 93 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.1/ISE_DS/EDK/data/TextEditor.cfg>
+Writing filter settings....
+Done writing filter settings to:
+	C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\etc\microblaze.filters
+Done writing Tab View settings to:
+	C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\etc\microblaze.gui
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tcl is overriding
+   PARAMETER C_FAMILY value to spartan6 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 79 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x81000000-0x8100ffff) Ethernet_Lite	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE: Ethernet_Lite - This design
+   requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation. - C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\microblaze.mhs
+   line 107
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x2000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 92 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 93 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+No changes to be saved in MHS file
+Saved project XMP file
+Saved Make file
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+Xilinx EDK 14.1 Build EDK_P.15xf
+
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tcl is overriding
+   PARAMETER C_FAMILY value to spartan6 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 79 
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x81000000-0x8100ffff) Ethernet_Lite	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE: Ethernet_Lite - This design
+   requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation. - C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\microblaze.mhs
+   line 107
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x2000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 92 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\data\mdm
+   _v2_1_0.mpd line 93 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v2_01_a\dat
+   a\xps_intc_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+No changes to be saved in MHS file
+Saved project XMP file
+Saved Make file

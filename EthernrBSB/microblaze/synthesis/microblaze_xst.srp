@@ -1,0 +1,1252 @@
+Release 14.1 - xst P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "microblaze_xst.prj"
+Verilog Include Directory          : {"C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\pcores\" "C:\Nexys3_BSB_Support_v_2_8\Nexys3_PLB_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx16csg324-3
+Output File Name                   : "../implementation/microblaze.ngc"
+
+---- Source Options
+Top Module Name                    : microblaze
+
+---- Target Options
+Add IO Buffers                     : NO
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" into library work
+Parsing entity <microblaze>.
+Parsing architecture <STRUCTURE> of entity <microblaze>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <microblaze> (architecture <STRUCTURE>) from library <work>.
+WARNING:HDLCompiler:89 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" Line 1357: <iobuf> remains a black-box since it has no binding entity.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <microblaze>.
+    Related source file is "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd".
+    Set property "BOX_TYPE = user_black_box" for instance <microblaze_0>.
+    Set property "BOX_TYPE = user_black_box" for instance <mb_plb>.
+    Set property "BOX_TYPE = user_black_box" for instance <ilmb>.
+    Set property "BOX_TYPE = user_black_box" for instance <dlmb>.
+    Set property "BOX_TYPE = user_black_box" for instance <dlmb_cntlr>.
+    Set property "BOX_TYPE = user_black_box" for instance <ilmb_cntlr>.
+    Set property "BOX_TYPE = user_black_box" for instance <lmb_bram>.
+    Set property "BOX_TYPE = user_black_box" for instance <Ethernet_Lite>.
+    Set property "BOX_TYPE = user_black_box" for instance <mem_bus_mux_0>.
+    Set property "BOX_TYPE = user_black_box" for instance <clock_generator_0>.
+    Set property "BOX_TYPE = user_black_box" for instance <mdm_0>.
+    Set property "BOX_TYPE = user_black_box" for instance <proc_sys_reset_0>.
+    Set property "BOX_TYPE = user_black_box" for instance <xps_intc_0>.
+    Set property "buffer_type = IBUF" for signal <fpga_0_Ethernet_Lite_PHY_tx_clk_pin>.
+    Set property "buffer_type = IBUF" for signal <fpga_0_Ethernet_Lite_PHY_rx_clk_pin>.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <INTERRUPT_ACK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <LOCKSTEP_MASTER_OUT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <LOCKSTEP_OUT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWADDR> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWLEN> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWSIZE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWBURST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWCACHE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWPROT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWQOS> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_WDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_WSTRB> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARADDR> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARLEN> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARSIZE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARBURST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARCACHE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARPROT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARQOS> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWADDR> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWLEN> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWSIZE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWBURST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWCACHE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWPROT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWQOS> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_WDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_WSTRB> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARADDR> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARLEN> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARSIZE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARBURST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARCACHE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARPROT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARQOS> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWADDR> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWLEN> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWSIZE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWBURST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWCACHE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWPROT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWQOS> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWUSER> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_WDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_WSTRB> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_WUSER> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARADDR> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARLEN> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARSIZE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARBURST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARCACHE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARPROT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARQOS> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARUSER> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWADDR> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWLEN> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWSIZE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWBURST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWCACHE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWPROT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWQOS> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWUSER> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_WDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_WSTRB> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_WUSER> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARADDR> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARLEN> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARSIZE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARBURST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARCACHE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARPROT> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARQOS> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARUSER> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Instruction> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_PC> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Reg_Addr> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_MSR_Reg> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_PID_Reg> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_New_Reg_Value> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Exception_Kind> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Data_Address> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Data_Write_Value> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Data_Byte_Enable> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL0_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL1_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL2_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL3_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL4_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL5_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL6_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL7_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL8_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL9_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL10_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL11_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL12_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL13_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL14_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL15_M_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M0_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M1_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M2_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M3_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M4_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M5_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M6_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M7_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M8_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M9_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M10_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M11_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M12_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M13_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M14_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M15_AXIS_TDATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <ICACHE_FSL_OUT_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <DCACHE_FSL_OUT_DATA> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <MB_Halted> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <MB_Error> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWLOCK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_AWVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_WLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_WVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_BREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARLOCK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_ARVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IP_RREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWLOCK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_AWVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_WLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_WVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_BREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARLOCK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_ARVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DP_RREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWLOCK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_AWVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_WLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_WVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_BREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARLOCK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_ARVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_IC_RREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWLOCK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_AWVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_WLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_WVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_BREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARLOCK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_ARVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M_AXI_DC_RREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Valid_Instr> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Reg_Write> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Exception_Taken> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Jump_Taken> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Delay_Slot> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Data_Access> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Data_Read> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Data_Write> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_DCache_Req> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_DCache_Hit> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_DCache_Rdy> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_DCache_Read> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_ICache_Req> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_ICache_Hit> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_ICache_Rdy> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_OF_PipeRun> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_EX_PipeRun> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_MEM_PipeRun> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_MB_Halted> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <Trace_Jump_Hit> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL0_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL0_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL0_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL0_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL0_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL1_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL1_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL1_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL1_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL1_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL2_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL2_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL2_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL2_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL2_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL3_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL3_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL3_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL3_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL3_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL4_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL4_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL4_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL4_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL4_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL5_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL5_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL5_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL5_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL5_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL6_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL6_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL6_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL6_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL6_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL7_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL7_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL7_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL7_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL7_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL8_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL8_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL8_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL8_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL8_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL9_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL9_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL9_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL9_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL9_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL10_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL10_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL10_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL10_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL10_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL11_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL11_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL11_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL11_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL11_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL12_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL12_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL12_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL12_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL12_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL13_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL13_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL13_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL13_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL13_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL14_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL14_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL14_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL14_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL14_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL15_S_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL15_S_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL15_M_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL15_M_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <FSL15_M_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M0_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M0_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S0_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M1_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M1_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S1_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M2_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M2_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S2_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M3_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M3_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S3_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M4_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M4_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S4_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M5_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M5_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S5_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M6_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M6_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S6_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M7_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M7_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S7_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M8_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M8_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S8_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M9_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M9_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S9_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M10_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M10_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S10_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M11_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M11_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S11_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M12_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M12_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S12_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M13_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M13_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S13_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M14_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M14_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S14_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M15_AXIS_TLAST> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <M15_AXIS_TVALID> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <S15_AXIS_TREADY> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <ICACHE_FSL_IN_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <ICACHE_FSL_IN_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <ICACHE_FSL_OUT_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <ICACHE_FSL_OUT_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <ICACHE_FSL_OUT_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <DCACHE_FSL_IN_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <DCACHE_FSL_IN_READ> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <DCACHE_FSL_OUT_CLK> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <DCACHE_FSL_OUT_WRITE> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 1577: Output port <DCACHE_FSL_OUT_CONTROL> of the instance <microblaze_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <MPLB_Rst> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_dcrDBus> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SMRdErr> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SMWrErr> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SMBusy> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SrdDBus> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SrdWdAddr> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_Sssize> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_Rst> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_dcrAck> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SaddrAck> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SrdBTerm> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SrdComp> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SrdDAck> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_Srearbitrate> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_Swait> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SwrBTerm> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SwrComp> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <PLB_SwrDAck> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2178: Output port <Bus_Error_Det> of the instance <mb_plb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_SSize> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_rdDBus> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_MBusy> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_MWrErr> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_MRdErr> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_rdWdAddr> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_MIRQ> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <S_AXI_CTRL_BRESP> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <S_AXI_CTRL_RDATA> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <S_AXI_CTRL_RRESP> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <Interrupt> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_addrAck> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_wait> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_rearbitrate> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_wrDAck> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_wrComp> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_rdDAck> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_rdComp> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_wrBTerm> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <SPLB_CTRL_Sl_rdBTerm> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <S_AXI_CTRL_AWREADY> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <S_AXI_CTRL_WREADY> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <S_AXI_CTRL_BVALID> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <S_AXI_CTRL_ARREADY> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2337: Output port <S_AXI_CTRL_RVALID> of the instance <dlmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_SSize> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_rdDBus> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_MBusy> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_MWrErr> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_MRdErr> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_rdWdAddr> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_MIRQ> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <S_AXI_CTRL_BRESP> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <S_AXI_CTRL_RDATA> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <S_AXI_CTRL_RRESP> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <Interrupt> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_addrAck> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_wait> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_rearbitrate> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_wrDAck> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_wrComp> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_rdDAck> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_rdComp> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_wrBTerm> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <SPLB_CTRL_Sl_rdBTerm> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <S_AXI_CTRL_AWREADY> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <S_AXI_CTRL_WREADY> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <S_AXI_CTRL_BVALID> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <S_AXI_CTRL_ARREADY> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2421: Output port <S_AXI_CTRL_RVALID> of the instance <ilmb_cntlr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2584: Output port <DQ_I_RAM> of the instance <mem_bus_mux_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2584: Output port <DQ_I_FLASH> of the instance <mem_bus_mux_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2584: Output port <DQ_I_QUAD_SPI> of the instance <mem_bus_mux_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT1> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT2> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT3> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT4> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT5> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT6> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT7> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT8> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT9> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT10> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT11> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT12> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT13> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT14> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKOUT15> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <CLKFBOUT> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2625: Output port <PSDONE> of the instance <clock_generator_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <S_AXI_BRESP> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <S_AXI_RDATA> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <S_AXI_RRESP> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Reg_En_1> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Reg_En_2> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Reg_En_3> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Reg_En_4> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Reg_En_5> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Reg_En_6> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Reg_En_7> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Interrupt> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <S_AXI_AWREADY> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <S_AXI_WREADY> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <S_AXI_BVALID> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <S_AXI_ARREADY> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <S_AXI_RVALID> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Clk_1> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_TDI_1> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Capture_1> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Shift_1> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Update_1> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Rst_1> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Clk_2> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_TDI_2> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Capture_2> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Shift_2> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Update_2> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Rst_2> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Clk_3> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_TDI_3> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Capture_3> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Shift_3> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Update_3> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Rst_3> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Clk_4> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_TDI_4> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Capture_4> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Shift_4> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Update_4> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Rst_4> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Clk_5> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_TDI_5> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Capture_5> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Shift_5> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Update_5> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Rst_5> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Clk_6> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_TDI_6> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Capture_6> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Shift_6> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Update_6> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Rst_6> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Clk_7> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_TDI_7> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Capture_7> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Shift_7> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Update_7> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Dbg_Rst_7> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <bscan_tdi> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <bscan_reset> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <bscan_shift> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <bscan_update> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <bscan_capture> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <bscan_sel1> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <bscan_drck1> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Ext_JTAG_DRCK> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Ext_JTAG_RESET> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Ext_JTAG_SEL> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Ext_JTAG_CAPTURE> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Ext_JTAG_SHIFT> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Ext_JTAG_UPDATE> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2654: Output port <Ext_JTAG_TDI> of the instance <mdm_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2803: Output port <Peripheral_Reset> of the instance <proc_sys_reset_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2803: Output port <Interconnect_aresetn> of the instance <proc_sys_reset_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2803: Output port <Peripheral_aresetn> of the instance <proc_sys_reset_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2803: Output port <RstcPPCresetcore_0> of the instance <proc_sys_reset_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2803: Output port <RstcPPCresetchip_0> of the instance <proc_sys_reset_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2803: Output port <RstcPPCresetsys_0> of the instance <proc_sys_reset_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2803: Output port <RstcPPCresetcore_1> of the instance <proc_sys_reset_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2803: Output port <RstcPPCresetchip_1> of the instance <proc_sys_reset_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Xilinx\Project\Ethernet\EthernrBSB\microblaze\hdl\microblaze.vhd" line 2803: Output port <RstcPPCresetsys_1> of the instance <proc_sys_reset_0> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <microblaze> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/microblaze_ethernet_lite_wrapper.ngc>.
+Reading core <../implementation/microblaze_clock_generator_0_wrapper.ngc>.
+Reading core <../implementation/microblaze_proc_sys_reset_0_wrapper.ngc>.
+Reading core <../implementation/microblaze_xps_intc_0_wrapper.ngc>.
+Reading core <../implementation/microblaze_microblaze_0_wrapper.ngc>.
+Reading core <../implementation/microblaze_mb_plb_wrapper.ngc>.
+Reading core <../implementation/microblaze_ilmb_wrapper.ngc>.
+Reading core <../implementation/microblaze_dlmb_wrapper.ngc>.
+Reading core <../implementation/microblaze_dlmb_cntlr_wrapper.ngc>.
+Reading core <../implementation/microblaze_ilmb_cntlr_wrapper.ngc>.
+Reading core <../implementation/microblaze_mdm_0_wrapper.ngc>.
+Reading core <../implementation/microblaze_lmb_bram_wrapper.ngc>.
+Reading core <../implementation/microblaze_mem_bus_mux_0_wrapper.ngc>.
+Loading core <microblaze_ethernet_lite_wrapper> for timing and area information for instance <Ethernet_Lite>.
+Loading core <microblaze_clock_generator_0_wrapper> for timing and area information for instance <clock_generator_0>.
+Loading core <microblaze_proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
+Loading core <microblaze_xps_intc_0_wrapper> for timing and area information for instance <xps_intc_0>.
+Loading core <microblaze_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
+Loading core <microblaze_mb_plb_wrapper> for timing and area information for instance <mb_plb>.
+Loading core <microblaze_ilmb_wrapper> for timing and area information for instance <ilmb>.
+Loading core <microblaze_dlmb_wrapper> for timing and area information for instance <dlmb>.
+Loading core <microblaze_dlmb_cntlr_wrapper> for timing and area information for instance <dlmb_cntlr>.
+Loading core <microblaze_ilmb_cntlr_wrapper> for timing and area information for instance <ilmb_cntlr>.
+Loading core <microblaze_mdm_0_wrapper> for timing and area information for instance <mdm_0>.
+Loading core <microblaze_lmb_bram_wrapper> for timing and area information for instance <lmb_bram>.
+Loading core <microblaze_mem_bus_mux_0_wrapper> for timing and area information for instance <mem_bus_mux_0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <microblaze> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block microblaze, actual ratio is 25.
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/data_timeout> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/data_timeout_1> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/TX_DONE_D1_I> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE24A> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_BURST_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_BURST_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_STATE/state21a> in Unit <Ethernet_Lite> is equivalent to the following 2 FFs/Latches : <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE21A> <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE19A> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_SNGL_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_SNGL_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[2].I_SIZE_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[2].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/GEN_FOR_SHARED.addr_cntl_cs_FSM_FFd1> in Unit <Ethernet_Lite> is equivalent to the following 2 FFs/Latches : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/GEN_FOR_SHARED.addr_cntl_cs_FSM_FFd1_1> <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/GEN_FOR_SHARED.addr_cntl_cs_FSM_FFd1_2> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_CACHLN_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_CACHLN_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[3].I_SIZE_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[3].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[1].I_SIZE_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[1].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd4> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd4_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 5 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/data_timeout> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/data_timeout_1> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/TX_DONE_D1_I> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE24A> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_BURST_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_BURST_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_STATE/state21a> in Unit <Ethernet_Lite> is equivalent to the following 2 FFs/Latches : <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE21A> <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_STATE_MACHINE/STATE19A> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_SNGL_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_SNGL_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[2].I_SIZE_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[2].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/GEN_FOR_SHARED.addr_cntl_cs_FSM_FFd1> in Unit <Ethernet_Lite> is equivalent to the following 2 FFs/Latches : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/GEN_FOR_SHARED.addr_cntl_cs_FSM_FFd1_1> <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/GEN_FOR_SHARED.addr_cntl_cs_FSM_FFd1_2> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_CACHLN_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_CACHLN_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[3].I_SIZE_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[3].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[1].I_SIZE_S_H_REG> in Unit <Ethernet_Lite> is equivalent to the following FF/Latch : <Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[1].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_30_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_31_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_29_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_3> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <mb_plb> is equivalent to the following 3 FFs/Latches : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_3> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd4> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd4_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 5 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <mb_plb> is equivalent to the following FF/Latch : <mb_plb/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : microblaze.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3759
+#      GND                         : 15
+#      INV                         : 47
+#      LUT1                        : 45
+#      LUT2                        : 242
+#      LUT3                        : 637
+#      LUT4                        : 462
+#      LUT5                        : 604
+#      LUT6                        : 886
+#      LUT6_2                      : 79
+#      MULT_AND                    : 30
+#      MUXCY                       : 185
+#      MUXCY_L                     : 168
+#      MUXF7                       : 122
+#      MUXF8                       : 1
+#      VCC                         : 8
+#      XORCY                       : 228
+# FlipFlops/Latches                : 2902
+#      FD                          : 186
+#      FDC                         : 93
+#      FDC_1                       : 5
+#      FDCE                        : 54
+#      FDE                         : 351
+#      FDE_1                       : 8
+#      FDP                         : 19
+#      FDPE                        : 10
+#      FDR                         : 1171
+#      FDRE                        : 890
+#      FDRE_1                      : 1
+#      FDS                         : 24
+#      FDSE                        : 90
+# RAMS                             : 28
+#      RAM16X1S                    : 4
+#      RAM32M                      : 18
+#      RAMB16BWER                  : 6
+# Shift Registers                  : 112
+#      SRL16                       : 1
+#      SRL16E                      : 32
+#      SRLC16E                     : 79
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 20
+#      IBUF                        : 2
+#      IOBUF                       : 18
+# DSPs                             : 3
+#      DSP48A1                     : 3
+# Others                           : 3
+#      AND2B1L                     : 1
+#      BSCAN_SPARTAN6              : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2891  out of  18224    15%  
+ Number of Slice LUTs:                 3190  out of   9112    35%  
+    Number used as Logic:              3002  out of   9112    32%  
+    Number used as Memory:              188  out of   2176     8%  
+       Number used as RAM:               76
+       Number used as SRL:              112
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4651
+   Number with an unused Flip Flop:    1760  out of   4651    37%  
+   Number with an unused LUT:          1461  out of   4651    31%  
+   Number of fully used LUT-FF pairs:  1430  out of   4651    30%  
+   Number of unique control sets:       183
+
+IO Utilization: 
+ Number of IOs:                          73
+ Number of bonded IOBs:                  20  out of    232     8%  
+    IOB Flip Flops/Latches:              11
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                6  out of     32    18%  
+    Number using Block RAM only:          6
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of DSP48A1s:                      3  out of     32     9%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                             | Load  |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
+fpga_0_Ethernet_Lite_PHY_rx_clk_pin| IBUF                                                                                                              | 40    |
+fpga_0_Ethernet_Lite_PHY_tx_clk_pin| IBUF                                                                                                              | 45    |
+fpga_0_clk_1_sys_clk_pin           | PLL_ADV:CLKOUT0                                                                                                   | 2712  |
+Ethernet_Lite/IP2INTC_Irpt         | NONE(xps_intc_0/xps_intc_0/INTC_CORE_I/INTR_DETECT_GEN<0>.EDGE_DETECT_GEN.intr_sync_0)                            | 1     |
+mdm_0/mdm_0/drck_i                 | BUFG                                                                                                              | 205   |
+mdm_0/Ext_JTAG_UPDATE              | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)| 42    |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 9.833ns (Maximum Frequency: 101.700MHz)
+   Minimum input arrival time before clock: 7.508ns
+   Maximum output required time after clock: 7.992ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fpga_0_Ethernet_Lite_PHY_tx_clk_pin'
+  Clock period: 3.201ns (frequency: 312.354MHz)
+  Total number of paths / destination ports: 152 / 85
+-------------------------------------------------------------------------
+Delay:               1.601ns (Levels of Logic = 1)
+  Source:            Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/TX/phy_tx_en_i (FF)
+  Destination:       Ethernet_Lite/Ethernet_Lite/IOFFS_GEN2.TEN_FF (FF)
+  Source Clock:      fpga_0_Ethernet_Lite_PHY_tx_clk_pin falling
+  Destination Clock: fpga_0_Ethernet_Lite_PHY_tx_clk_pin rising
+
+  Data Path: Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/TX/phy_tx_en_i to Ethernet_Lite/Ethernet_Lite/IOFFS_GEN2.TEN_FF
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.447   0.849  Ethernet_Lite/XEMAC_I/EMAC_I/TX/phy_tx_en_i (Ethernet_Lite/XEMAC_I/EMAC_I/TX/phy_tx_en_i)
+     LUT2:I0->O            1   0.203   0.000  Ethernet_Lite/XEMAC_I/EMAC_I/TX/Mmux_Phy_tx_data11 (Ethernet_Lite/phy_tx_data_i<3>)
+     FDRE:D                    0.102          Ethernet_Lite/IOFFS_GEN[3].TX_FF_I
+    ----------------------------------------
+    Total                      1.601ns (0.752ns logic, 0.849ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fpga_0_clk_1_sys_clk_pin'
+  Clock period: 5.871ns (frequency: 170.316MHz)
+  Total number of paths / destination ports: 319825 / 7032
+-------------------------------------------------------------------------
+Delay:               7.829ns (Levels of Logic = 0)
+  Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I/EX_Op2_31 (FF)
+  Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48A.Normal_in_fabric.DSP48A_I1 (DSP)
+  Source Clock:      fpga_0_clk_1_sys_clk_pin rising 0.8X
+  Destination Clock: fpga_0_clk_1_sys_clk_pin rising 0.8X
+
+  Data Path: microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I/EX_Op2_31 to microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48A.Normal_in_fabric.DSP48A_I1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            48   0.447   1.519  microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I/EX_Op2_31 (microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ex_op2<31>)
+     DSP48A1:B0                5.863          microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48A.Normal_in_fabric.DSP48A_I1
+    ----------------------------------------
+    Total                      7.829ns (6.310ns logic, 1.519ns route)
+                                       (80.6% logic, 19.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fpga_0_Ethernet_Lite_PHY_rx_clk_pin'
+  Clock period: 2.658ns (frequency: 376.265MHz)
+  Total number of paths / destination ports: 123 / 78
+-------------------------------------------------------------------------
+Delay:               1.329ns (Levels of Logic = 1)
+  Source:            Ethernet_Lite/Ethernet_Lite/IOFFS_GEN2.RER_FF (FF)
+  Destination:       Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM (RAM)
+  Source Clock:      fpga_0_Ethernet_Lite_PHY_rx_clk_pin rising
+  Destination Clock: fpga_0_Ethernet_Lite_PHY_rx_clk_pin falling
+
+  Data Path: Ethernet_Lite/Ethernet_Lite/IOFFS_GEN2.RER_FF to Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.447   0.579  Ethernet_Lite/IOFFS_GEN2.RER_FF (Ethernet_Lite/phy_rx_er_reg)
+     begin scope: 'Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM:DIN<0>'
+     RAM32M:DIA0               0.303          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM
+    ----------------------------------------
+    Total                      1.329ns (0.750ns logic, 0.579ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mdm_0/mdm_0/drck_i'
+  Clock period: 7.680ns (frequency: 130.203MHz)
+  Total number of paths / destination ports: 300 / 248
+-------------------------------------------------------------------------
+Delay:               3.840ns (Levels of Logic = 3)
+  Source:            mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (FF)
+  Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
+  Source Clock:      mdm_0/mdm_0/drck_i falling
+  Destination Clock: mdm_0/mdm_0/drck_i rising
+
+  Data Path: mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE to microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE_1:C->Q           1   0.447   0.924  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (mdm_0/MDM_Core_I1/JTAG_CONTROL_I/sync)
+     LUT6:I1->O            9   0.203   0.829  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_7)
+     end scope: 'mdm_0:Dbg_Shift_0'
+     begin scope: 'microblaze_0:DBG_SHIFT'
+     INV:I->O              8   0.206   0.802  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Shift_inv1_INV_0 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Shift_inv)
+     FDR:R                     0.430          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_0
+    ----------------------------------------
+    Total                      3.840ns (1.286ns logic, 2.554ns route)
+                                       (33.5% logic, 66.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mdm_0/Ext_JTAG_UPDATE'
+  Clock period: 9.833ns (frequency: 101.700MHz)
+  Total number of paths / destination ports: 334 / 52
+-------------------------------------------------------------------------
+Delay:               4.916ns (Levels of Logic = 4)
+  Source:            mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk (FF)
+  Source Clock:      mdm_0/Ext_JTAG_UPDATE falling
+  Destination Clock: mdm_0/Ext_JTAG_UPDATE rising
+
+  Data Path: mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I to microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           14   0.447   1.062  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            5   0.203   0.962  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I11 (Dbg_Reg_En_0<0>)
+     end scope: 'mdm_0:Dbg_Reg_En_0<0>'
+     begin scope: 'microblaze_0:DBG_REG_EN<0>'
+     LUT4:I0->O            4   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Command_Reg_En31 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Command_Reg_En_bdd4)
+     LUT5:I4->O            9   0.205   0.829  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En)
+     FDCE:CE                   0.322          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk_TClk
+    ----------------------------------------
+    Total                      4.916ns (1.380ns logic, 3.536ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_Ethernet_Lite_PHY_rx_clk_pin'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.102ns (Levels of Logic = 1)
+  Source:            fpga_0_Ethernet_Lite_PHY_rx_er_pin (PAD)
+  Destination:       Ethernet_Lite/Ethernet_Lite/IOFFS_GEN2.RER_FF (FF)
+  Destination Clock: fpga_0_Ethernet_Lite_PHY_rx_clk_pin rising
+
+  Data Path: fpga_0_Ethernet_Lite_PHY_rx_er_pin to Ethernet_Lite/Ethernet_Lite/IOFFS_GEN2.RER_FF
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'Ethernet_Lite:PHY_rx_er'
+     FDRE:D                    0.102          Ethernet_Lite/IOFFS_GEN2.RER_FF
+    ----------------------------------------
+    Total                      0.102ns (0.102ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_clk_1_sys_clk_pin'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              3.693ns (Levels of Logic = 3)
+  Source:            fpga_0_Ethernet_Lite_PHY_tx_clk_pin (PAD)
+  Destination:       Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/tx_clk_reg_d1 (FF)
+  Destination Clock: fpga_0_clk_1_sys_clk_pin rising 0.8X
+
+  Data Path: fpga_0_Ethernet_Lite_PHY_tx_clk_pin to Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/tx_clk_reg_d1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  fpga_0_Ethernet_Lite_PHY_tx_clk_pin_IBUF (fpga_0_Ethernet_Lite_PHY_tx_clk_pin_IBUF)
+     begin scope: 'Ethernet_Lite:PHY_tx_clk'
+     INV:I->O             41   0.206   1.419  Ethernet_Lite/phy_tx_clk_i1_INV_0 (Ethernet_Lite/phy_tx_clk_i)
+     FDR:D                     0.102          Ethernet_Lite/XEMAC_I/EMAC_I/tx_clk_reg_d1
+    ----------------------------------------
+    Total                      3.693ns (1.530ns logic, 2.163ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mdm_0/mdm_0/drck_i'
+  Total number of paths / destination ports: 145 / 125
+-------------------------------------------------------------------------
+Offset:              3.548ns (Levels of Logic = 3)
+  Source:            mdm_0/mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:SHIFT (PAD)
+  Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
+  Destination Clock: mdm_0/mdm_0/drck_i rising
+
+  Data Path: mdm_0/mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:SHIFT to microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    5   0.000   1.079  mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I (Ext_JTAG_SHIFT)
+     LUT6:I0->O            9   0.203   0.829  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_7)
+     end scope: 'mdm_0:Dbg_Shift_0'
+     begin scope: 'microblaze_0:DBG_SHIFT'
+     INV:I->O              8   0.206   0.802  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Shift_inv1_INV_0 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Shift_inv)
+     FDR:R                     0.430          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_0
+    ----------------------------------------
+    Total                      3.548ns (0.839ns logic, 2.709ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mdm_0/Ext_JTAG_UPDATE'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              7.508ns (Levels of Logic = 6)
+  Source:            mdm_0/mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:SEL (PAD)
+  Destination:       mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination Clock: mdm_0/Ext_JTAG_UPDATE falling
+
+  Data Path: mdm_0/mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:SEL to mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SEL     8   0.000   1.147  mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I (mdm_0/sel)
+     LUT5:I0->O            1   0.203   0.827  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/_n01231 (mdm_0/MDM_Core_I1/JTAG_CONTROL_I/_n0123)
+     LUT4:I0->O            1   0.203   0.827  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].LUT_Delay (mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n)
+     LUT4:I0->O            1   0.203   0.827  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].LUT_Delay (mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].local_sel_n)
+     LUT4:I0->O            1   0.203   0.827  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].LUT_Delay (mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].local_sel_n)
+     LUT4:I0->O            1   0.203   0.827  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].LUT_Delay (mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n)
+     LUT4:I0->O            1   0.203   0.579  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay (mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n)
+     FDC_1:CLR                 0.430          mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
+    ----------------------------------------
+    Total                      7.508ns (1.648ns logic, 5.860ns route)
+                                       (22.0% logic, 78.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_Ethernet_Lite_PHY_tx_clk_pin'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              0.447ns (Levels of Logic = 1)
+  Source:            Ethernet_Lite/Ethernet_Lite/IOFFS_GEN[3].TX_FF_I (FF)
+  Destination:       fpga_0_Ethernet_Lite_PHY_tx_data_pin<3> (PAD)
+  Source Clock:      fpga_0_Ethernet_Lite_PHY_tx_clk_pin rising
+
+  Data Path: Ethernet_Lite/Ethernet_Lite/IOFFS_GEN[3].TX_FF_I to fpga_0_Ethernet_Lite_PHY_tx_data_pin<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             0   0.447   0.000  Ethernet_Lite/IOFFS_GEN[3].TX_FF_I (PHY_tx_data<3>)
+     end scope: 'Ethernet_Lite:PHY_tx_data<3>'
+    ----------------------------------------
+    Total                      0.447ns (0.447ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_clk_1_sys_clk_pin'
+  Total number of paths / destination ports: 21 / 5
+-------------------------------------------------------------------------
+Offset:              4.597ns (Levels of Logic = 7)
+  Source:            dlmb_cntlr/dlmb_cntlr/Sl_Ready_i (FF)
+  Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1:DI (PAD)
+  Source Clock:      fpga_0_clk_1_sys_clk_pin rising 0.8X
+
+  Data Path: dlmb_cntlr/dlmb_cntlr/Sl_Ready_i to microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1:DI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.684  dlmb_cntlr/Sl_Ready_i (dlmb_cntlr/Sl_Ready_i)
+     LUT2:I0->O            4   0.203   0.788  dlmb_cntlr/Sl_Ready1 (Sl_Ready)
+     end scope: 'dlmb_cntlr:Sl_Ready'
+     begin scope: 'dlmb:Sl_Ready<0>'
+     end scope: 'dlmb:LMB_Ready'
+     begin scope: 'microblaze_0:DREADY'
+     LUT2:I0->O            1   0.203   0.000  microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or/Using_FPGA.A_N1 (microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or/Using_FPGA.A_N)
+     MUXCY_L:S->LO         1   0.172   0.000  microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready)
+     MUXCY_L:CI->LO        1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N)
+     MUXCY_L:CI->LO      238   0.019   2.062  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_PipeRun_carry_and/Using_FPGA.MUXCY_I (Trace_MEM_PipeRun)
+    AND2B1L:DI                 0.000          microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1
+    ----------------------------------------
+    Total                      4.597ns (1.063ns logic, 3.534ns route)
+                                       (23.1% logic, 76.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mdm_0/Ext_JTAG_UPDATE'
+  Total number of paths / destination ports: 67 / 1
+-------------------------------------------------------------------------
+Offset:              7.311ns (Levels of Logic = 8)
+  Source:            mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       mdm_0/mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
+  Source Clock:      mdm_0/Ext_JTAG_UPDATE falling
+
+  Data Path: mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I to mdm_0/mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           14   0.447   1.062  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            5   0.203   1.059  mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I31 (Dbg_Reg_En_0<2>)
+     end scope: 'mdm_0:Dbg_Reg_En_0<2>'
+     begin scope: 'microblaze_0:DBG_REG_EN<2>'
+     LUT5:I0->O            1   0.203   0.944  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO)
+     LUT6:I0->O            1   0.203   0.808  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO12 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO11)
+     LUT6:I3->O            1   0.205   0.944  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO23 (DBG_TDO)
+     end scope: 'microblaze_0:DBG_TDO'
+     begin scope: 'mdm_0:Dbg_TDO_0'
+     LUT6:I0->O            1   0.203   0.827  mdm_0/MDM_Core_I1/Mmux_TDO_i13 (mdm_0/MDM_Core_I1/Mmux_TDO_i12)
+     LUT5:I1->O            0   0.203   0.000  mdm_0/MDM_Core_I1/Mmux_TDO_i16 (mdm_0/tdo)
+    BSCAN_SPARTAN6:TDO         0.000          mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I
+    ----------------------------------------
+    Total                      7.311ns (1.667ns logic, 5.643ns route)
+                                       (22.8% logic, 77.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mdm_0/mdm_0/drck_i'
+  Total number of paths / destination ports: 176 / 1
+-------------------------------------------------------------------------
+Offset:              7.992ns (Levels of Logic = 8)
+  Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_1 (FF)
+  Destination:       mdm_0/mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
+  Source Clock:      mdm_0/mdm_0/drck_i rising
+
+  Data Path: microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_1 to mdm_0/mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             26   0.447   1.206  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count<1>)
+     SRL16E:A1->Q          1   0.203   0.827  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Use_SRL16.The_Cache_Addresses[5].SRL16E_Cache_I (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Use_SRL16.tdo_config_word1<6>)
+     LUT6:I2->O            1   0.203   0.827  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO_Config_Word_7 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO_Config_Word_7)
+     LUT6:I2->O            1   0.203   0.808  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO13 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO12)
+     LUT6:I3->O            1   0.205   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO14 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO13)
+     LUT6:I4->O            1   0.203   0.944  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO23 (DBG_TDO)
+     end scope: 'microblaze_0:DBG_TDO'
+     begin scope: 'mdm_0:Dbg_TDO_0'
+     LUT6:I0->O            1   0.203   0.827  mdm_0/MDM_Core_I1/Mmux_TDO_i13 (mdm_0/MDM_Core_I1/Mmux_TDO_i12)
+     LUT5:I1->O            0   0.203   0.000  mdm_0/MDM_Core_I1/Mmux_TDO_i16 (mdm_0/tdo)
+    BSCAN_SPARTAN6:TDO         0.000          mdm_0/Use_Spartan6.BSCAN_SPARTAN6_I
+    ----------------------------------------
+    Total                      7.992ns (1.870ns logic, 6.122ns route)
+                                       (23.4% logic, 76.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Ethernet_Lite/IP2INTC_Irpt
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+fpga_0_clk_1_sys_clk_pin|    3.579|         |         |         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_Ethernet_Lite_PHY_rx_clk_pin
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+fpga_0_Ethernet_Lite_PHY_rx_clk_pin|         |         |    2.600|         |
+fpga_0_clk_1_sys_clk_pin           |    2.956|         |    3.778|         |
+-----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_Ethernet_Lite_PHY_tx_clk_pin
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+fpga_0_Ethernet_Lite_PHY_tx_clk_pin|         |    1.601|    2.892|         |
+fpga_0_clk_1_sys_clk_pin           |    2.956|         |    4.040|         |
+-----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_clk_1_sys_clk_pin
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+Ethernet_Lite/IP2INTC_Irpt         |    1.128|         |         |         |
+fpga_0_Ethernet_Lite_PHY_rx_clk_pin|         |    1.909|         |         |
+fpga_0_Ethernet_Lite_PHY_tx_clk_pin|         |    3.384|         |         |
+fpga_0_clk_1_sys_clk_pin           |    7.829|         |         |         |
+mdm_0/Ext_JTAG_UPDATE              |    3.863|    2.923|         |         |
+mdm_0/mdm_0/drck_i                 |    4.746|         |         |         |
+-----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mdm_0/Ext_JTAG_UPDATE
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+fpga_0_clk_1_sys_clk_pin|    1.733|         |         |         |
+mdm_0/Ext_JTAG_UPDATE   |         |    4.916|    7.868|         |
+mdm_0/mdm_0/drck_i      |    1.263|         |         |         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mdm_0/mdm_0/drck_i
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+fpga_0_clk_1_sys_clk_pin|    5.823|         |         |         |
+mdm_0/Ext_JTAG_UPDATE   |         |    5.147|    2.873|         |
+mdm_0/mdm_0/drck_i      |    2.408|    3.840|    3.249|         |
+------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.42 secs
+ 
+--> 
+
+Total memory usage is 225780 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :  555 (   0 filtered)
+
